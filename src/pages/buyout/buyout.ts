@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavParams, NavController } from 'ionic-angular';
+
 @Component({
   selector: 'page-buyout',
   templateUrl: 'buyout.html',
@@ -7,7 +8,9 @@ import { NavParams, NavController } from 'ionic-angular';
 export class BuyoutPage {
   productData: {name: string, quantity: number};
 
-  constructor(private navParams: NavParams, private navCtrl: NavController){
+  constructor(
+    private navParams: NavParams, private navCtrl: NavController
+    ){
     this.productData = this.navParams.data;
   }
 
