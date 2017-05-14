@@ -15,6 +15,9 @@ import { NavParams, NavController } from 'ionic-angular';
             <p>Hi, I'm {{name}}</p>  
             <button ion-button (click)="goBack()">Confirm</button> 
         </ion-content>
+        <ion-footer padding>
+        <p>The Footer</p>
+        </ion-footer>
     `
 })
 
